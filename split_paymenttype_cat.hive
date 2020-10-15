@@ -1,0 +1,3 @@
+select Category, Type, count(App) as count_app
+from play1
+group by Category, Type;

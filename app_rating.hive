@@ -1,0 +1,5 @@
+select App, Rating, Installs 
+from play1
+Where Rating NOT IN ('NaN') 
+order by Rating Desc
+limit 10;

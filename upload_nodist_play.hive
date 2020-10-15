@@ -1,0 +1,3 @@
+DROP TABLE IF EXISTS play1;
+
+CREATE TABLE play1 as select distinct *  from play;

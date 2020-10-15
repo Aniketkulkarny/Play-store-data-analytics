@@ -1,0 +1,4 @@
+select YEAR(Last_Updated) as years, avg(Installs) as avg_Installs, avg(Size) as size
+from play1
+where Size NOT IN ('NaN')
+group by YEAR(Last_Updated);

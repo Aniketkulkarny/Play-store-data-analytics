@@ -1,0 +1,22 @@
+DROP TABLE IF EXISTS play;
+
+CREATE TABLE play(
+	App string,
+	Category string,
+	Rating float,
+	Reviews int,
+	Size float,
+	Installs string,
+	Type string,
+	Price float,
+	Content_Rating string,
+	Genres string,
+	Last_Updated date,
+	Current_Ver string,
+	Android_Ver string )
+      ROW FORMAT DELIMITED
+      FIELDS TERMINATED BY '\t';
+
+LOAD DATA LOCAL INPATH 'googleplaystore.txt' OVERWRITE INTO TABLE play;
+
+

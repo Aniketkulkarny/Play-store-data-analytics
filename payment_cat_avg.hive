@@ -1,0 +1,4 @@
+select Category, avg(Price) as Avg_price
+from play1
+where Type='Paid'
+group by Category;

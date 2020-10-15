@@ -1,0 +1,4 @@
+select Content_Rating, sum(Installs) as totinstalls
+from play1
+group by Content_Rating
+order by totinstalls;

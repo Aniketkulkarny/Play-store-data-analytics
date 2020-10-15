@@ -1,0 +1,4 @@
+select Rating, avg(Installs) as Avg
+from play1
+group by Rating
+order by Rating;

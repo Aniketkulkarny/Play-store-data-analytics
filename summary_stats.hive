@@ -1,0 +1,19 @@
+
+SET hive.cli.print.header=true;
+Select price, price/sum(price) over ()
+from play1
+order by price desc
+limit 10;
+
+
+
+SET hive.cli.print.header=true;
+Select count(distinct(price)) distinct_count, max(price) max_price, min(price) min_price, avg(price) Average_price
+from play1;
+
+SET hive.cli.print.header=true;
+Select count(price) NULL_Count
+from play1
+where price IS NULL;
+
+
